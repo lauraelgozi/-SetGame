@@ -1,0 +1,153 @@
+body{
+  background-color:   #FFFAF0;
+
+}
+.board {
+  height: 90%;
+  width: 50%;
+  border: solid 2px black;
+  padding: 2%;
+  border-radius: 10px;
+  margin: 0 25%;
+  background-color: rgb(218, 192, 241);
+
+}
+
+.row {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.card {
+  height: 85%;
+  width: 23%;
+  border: solid 2px grey;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 10px plum;
+}
+
+
+/* HeartShape */
+
+.heart{
+    width: 25%;
+    height: 25%;
+    border-radius: 5px 50px;
+}
+
+.heart.purple {  
+    background-color: purple;
+    border: 3px solid purple;
+  }
+  
+  .heart.green {
+    background-color: green;
+    border: 3px solid green;
+  }
+  
+  .heart.red {
+    background-color: red;
+    border: 3px solid red;
+  }
+
+
+
+/* Circle */
+
+
+.circle.purple {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: purple;
+  border: 3px solid purple;
+}
+
+.circle.green {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: green;
+  border: 3px solid green;
+}
+
+.circle.red {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: red;
+  border: 3px solid red;
+}
+
+/* Diamond */
+
+.diamond {
+  border-style: solid;
+  height: 15%;
+  width: 15%;
+  transform: rotate(45deg)
+}
+
+.diamond.purple {
+    width: 15%;
+    height: 15%;
+    background-color: purple;
+    border: 3px solid purple;
+  }
+  
+  .diamond.green {
+    width: 15%;
+    height: 15%;
+    background-color: green;
+    border: 3px solid green;
+  }
+  
+  .diamond.red {
+    width: 15%;
+    height: 15%;
+    background-color: red;
+    border: 3px solid red;
+  }
+
+.outlined{
+  background: white!important;
+}
+.striped.purple{
+  background: 
+  repeating-linear-gradient(50deg, purple,
+   purple 10px, 
+   white 10px, 
+   white 20px);
+}
+
+
+.striped.green{
+  background: 
+  repeating-linear-gradient(50deg, green, 
+  green 10px, 
+  white 10px, 
+  white 20px);
+}
+
+.striped.red{
+  background: 
+  repeating-linear-gradient(50deg, red,
+   red 10px, 
+   white 10px, 
+   white 20px);
+}
+
+.selected {
+  pointer-events:none;
+  border: 2px solid yellow;
+}
+.boardDisabled {
+  pointer-events:none;
+}
